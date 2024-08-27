@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+#heading{
+     background-color: #081b31;
+     color: white;
+     height: 5rem;
+     /* text ko vertically center my lany ky liya hum isko line height dein gy */
+     line-height:5rem ;
+     font-size: 2rem;
+     font-weight: 700;
+}
+.choice{
+    height: 30vmin;
+    width: 30vmin;
+    border-radius: 50%;
+    /*ab pic div my center nahi hy jis sy border sahi nahi araha hy to isko display flex karen gy  */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.choice:hover{
+    /* jase hi hum choice pr hover kare to wo pic blur ho jaye to opacity ko half kr dein gy */
+    /* opacity: 0.5; */
+    /* is sy cursor change ho jaye ga hand wala cursor ajye ga */
+    cursor: pointer;
+    background-color: #081b31;
+}
+img{
+    height: 28vmin ;
+    width: 28vmin;
+    /* img zara contract kitchi kitchi hogy thy to is liya ya property use ki */
+    object-fit: cover;
+    border-radius: 50%;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+.score-board{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+#user-score, 
+#comp-score{
+    font-size: 4rem;
+}
+.msg-container{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    
+}
+#msg{
+    background-color: #081b31;
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    
+}
+@media (max-width:600px)
+{   #msg{
+        font-size: 1rem;
+} 
+    
+}
